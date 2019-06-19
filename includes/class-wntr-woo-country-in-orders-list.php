@@ -56,7 +56,7 @@ class Wntr_Woo_Country_In_Orders_List {
      * @return void
      */
     public function load_text_domain() {
-        load_plugin_textdomain('wntr-woo-country-in-orders-list', false, basename(dirname(Wntr_Woo_Country_In_Orders_List_PLUGIN_FILE)) . '/languages'); 
+        load_plugin_textdomain('wntr-woo-country-in-orders-list', false, basename(dirname(WNTR_WOO_COUNTRY_IN_ORDERS_LIST_PLUGIN_FILE)) . '/languages'); 
 	}
 
 	/**
@@ -112,7 +112,7 @@ class Wntr_Woo_Country_In_Orders_List {
 		if($post_type === 'shop_order') {
 			$countries = WC()->countries->countries; ?>
 
-			<select name="_shipping_country" id="dropdown_shipping_country">
+			<select name="<?= self::SHIPPING_COUNTRY_FILTER_KEY; ?>" id="dropdown_shipping_country">
 				<option value="">
 					<?php esc_html_e('All Shipping Countries', 'wntr-woo-country-in-orders-list'); ?>
 				</option><?php
