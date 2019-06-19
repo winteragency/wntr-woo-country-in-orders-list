@@ -1,0 +1,19 @@
+{
+    "name": "winteragency/wntr-woo-country-in-orders-list",
+    "description": "Show shipping countries in a custom column in the orders list in wp-admin and allow sorting and filtering by country.",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Winter",
+            "email": "info@winteragency.se"
+        },
+        {
+            "name": "Marcus Forsberg",
+            "email": "marcus@winter.ax"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0"
+    }
+}
